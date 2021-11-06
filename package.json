@@ -15,6 +15,7 @@
     "convert"
   ],
   "author": "Paintoxic",
+  "repository": "https://github.com/paintoxic/rbga-to-hex-colors",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.16.0",
