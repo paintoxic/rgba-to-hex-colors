@@ -1,0 +1,25 @@
+{
+  "name": "rbga-to-hex-colors",
+  "version": "1.0.0",
+  "description": "RGBA Color converter to Hex color strings",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "jest": "jest",
+    "lint-init": "eslint --init",
+    "lint": "eslint"
+  },
+  "keywords": [
+    "rgba",
+    "hex",
+    "convert"
+  ],
+  "author": "Paintoxic",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "jest": "^27.3.1"
+  }
+}
