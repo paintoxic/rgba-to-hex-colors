@@ -1,10 +1,12 @@
 
 const PATTERNS = {
   RGBA_PREFIX_PATTERN: /^rgb\(|^rgba\(/,
-  REMOVE_PREFIX_PATTERN: /[^\d,-]|\(|\)| /ig
+  REMOVE_PREFIX_PATTERN: /[^\d,-]|\(|\)| /ig,
+  HEX_STRING_PATTERN: /^#(?:[0-9a-f]{3}){2}$/i
 }
 
 const rgbToHex = (color) => {
+  if (itsHex(color)) return `${color}`.toUpperCase()
   const itsRgba = itsRGBA(color)
   if (itsRgba) {
     const rgbaBits = getColorBits(color)
@@ -20,6 +22,13 @@ const rgbToHex = (color) => {
  * @returns `true` if a valid RGBA color string; `false` otherwise
  */
 const itsRGBA = (color) => { return PATTERNS.RGBA_PREFIX_PATTERN.test(color) }
+
+/**
+ * 
+ * @param {string} color string color
+ * @returns `true` if a hex color string; `false` otherwise
+ */
+const itsHex = (color) => { return PATTERNS.HEX_STRING_PATTERN.test(color) }
 
 /**
  * 
