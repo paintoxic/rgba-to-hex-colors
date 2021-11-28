@@ -1,8 +1,8 @@
-# rbga-to-hex-colors
+# rgba-to-hex-colors
 
 [![MIT License][license-image]][license] 
 
-rbga-to-hex-colors is a helper to convert RGBA Color String to Hex color string
+rgba-to-hex-colors is a helper to convert RGBA Color String to Hex color string
 
 ### **Example**
 
@@ -14,7 +14,7 @@ rbga-to-hex-colors is a helper to convert RGBA Color String to Hex color string
 
 ```js
 
-const { rgbToHex } = require("rbga-to-hex-colors")
+const { rgbToHex } = require("rgba-to-hex-colors")
 
 const hexColor = rgbToHex("rgba(255, 255, 255)")
 

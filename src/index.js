@@ -30,7 +30,7 @@ const rgbToHex = (color) => {
         const rgbaBits = getColorBits(color);
         return convertRGBABitsToHex(rgbaBits);
     } else {
-        throw new Error('Not valid RBGA color');
+        throw new Error('Not valid RGBA color');
     }
 };
 
