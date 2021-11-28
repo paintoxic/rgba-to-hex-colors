@@ -1,6 +1,6 @@
 {
   "name": "rgba-to-hex-colors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "RGBA Color converter to Hex color strings",
   "main": "src/index.js",
   "scripts": {
