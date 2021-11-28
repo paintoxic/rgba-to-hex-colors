@@ -1,5 +1,9 @@
-import { rgbToHex } from "../src";
+import { rgbToHex, hexToRgb } from '../src';
 
-test("Conversion", () => {
-  expect(rgbToHex("rgb(255, 255, 255)")).toBe("#FFFFFF")
-})
+test('rgb_conversion', () => {
+    expect(rgbToHex('rgb(255, 255, 255)')).toBe('#FFFFFF');
+});
+
+test('hex_conversion', () => {
+    expect(hexToRgb('#FFFFFF')).toBe('rgba(255,255,255,0)');
+});
