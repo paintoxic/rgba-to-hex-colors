@@ -21,7 +21,12 @@
     "color"
   ],
   "author": "Paintoxic",
-  "repository": "https://github.com/paintoxic/rgba-to-hex-colors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paintoxic/rgba-to-hex-colors.git"
+  },
+  "homepage": "https://github.com/paintoxic/rgba-to-hex-colors#readme",
+  "bugs": "https://github.com/paintoxic/rgba-to-hex-colors/issues",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "7.29.7",
